@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SignWrapper({ children }) {
   return (
-    <div className="grid  xl:grid-cols-2">
+    <div className="grid  xl:grid-cols-2 animate-in duration-1000 fade-in">
       <div className="h-[100svh]  w-full flex items-center justify-center bg-black">
         <div className="bg-black p-8 lg:min-w-[700px] xl:min-w-[600px] rounded-lg">
           {children}

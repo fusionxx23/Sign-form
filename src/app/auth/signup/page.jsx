@@ -208,38 +208,41 @@ function page() {
         <SignupHeaders h2={"Step One"} />
         <form
           id="1"
-          className="flex flex-col gap-y-4 items-center justify-center pt-6"
+          className=" pt-6"
           onSubmit={(e) => check(e, "Email", true)}
         >
-          <div id="emailcontainer" className="w-full">
-            <IconInput
-              type="text"
-              name="Email"
-              placeholder="Email"
-              value={formdata.Email}
-              onChange={handleChange}
-              className="bg-white rounded-lg w-[20em] h-[2.5em] md:w-[27em] md:h-[3em] xl:w-[35em] xl:h-[4em] px-3 text-[0.8rem] md:text-[1.0rem]"
-              required
-            >
-              <MdEmail />
-            </IconInput>
-            {/* <input
+          <div className="flex flex-col gap-y-4">
+            <div id="emailcontainer" className="w-full">
+              <IconInput
+                type="text"
+                name="Email"
+                placeholder="Email"
+                value={formdata.Email}
+                onChange={handleChange}
+                className="bg-white rounded-lg w-[20em] h-[2.5em] md:w-[27em] md:h-[3em] xl:w-[35em] xl:h-[4em] px-3 text-[0.8rem] md:text-[1.0rem]"
+                required
+              >
+                <MdEmail />
+              </IconInput>
+              {/* <input
                  
                 /> */}
+            </div>
+            <div id="usernamecontainer" className="w-full">
+              <IconInput
+                type="text"
+                name="Username"
+                placeholder="Username"
+                value={formdata.Username}
+                onChange={handleChange}
+                required
+              >
+                <MdPerson />
+              </IconInput>
+              {/* <input /> */}
+            </div>
           </div>
-          <div id="usernamecontainer" className="w-full">
-            <IconInput
-              type="text"
-              name="Username"
-              placeholder="Username"
-              value={formdata.Username}
-              onChange={handleChange}
-              required
-            >
-              <MdPerson />
-            </IconInput>
-            {/* <input /> */}
-          </div>
+
           <div className="pt-6 flex flex-col items-center gap-y-2">
             <button type="submit" className="btn btn-outline">
               Continue

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function StepBtns({ check, checkField }) {
   return (
-    <div className="flex justify-between pt-6 w-full">
+    <div className="flex justify-between  w-full">
       <button
         className="btn btn-outline"
         type="button"
