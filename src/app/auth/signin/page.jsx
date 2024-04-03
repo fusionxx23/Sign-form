@@ -97,7 +97,7 @@ function page() {
         <div className="font-poppins font-[500] text-[1.3rem] md:text-[1.5rem] xl:text-[1.8rem] text-white mb-[30px] sm:mb-[40px] lg:mb-[50px]">
           Login
         </div> */}
-        <div className="lg:py-14 lg:px-20 p-8 bg-black/80 rounded-lg lg:min-w-[750px]">
+        <div className="lg:py-8 lg:px-20 p-8 bg-black/60 rounded-lg lg:min-w-[750px]">
           <div className="flex flex-col items-center">
             <div className="font-poppins font-[700] text-[1.75rem] md:text-[2.0rem] xl:text-[2.2rem] text-white">
               Welcome Back

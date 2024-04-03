@@ -328,7 +328,7 @@ function ResetWrapper({ children, message }) {
   return (
     <main className="px-4">
       <div className="flex flex-col items-center justify-center h-[100svh]">
-        <div className="p-8 bg-black/70 rounded-lg lg:min-w-[700px]">
+        <div className="p-8 bg-black/60 rounded-lg lg:min-w-[700px]">
           <div className="font-poppins font-[700] text-[1.75rem] md:text-[2.0rem] xl:text-[2.2rem] text-white">
             Reset Password<span className="text-blue-400">.</span>
           </div>
