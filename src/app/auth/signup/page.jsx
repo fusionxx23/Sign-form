@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import SignWrapper from "@/components/SignupWrapper";
-import AlreadyAccount from "@/components/alreadyAccount";
+import AlreadyAccount from "@/components/AlreadyAccount";
 import IconInput from "@/components/IconInput";
 import { MdEmail, MdPerson, MdPhone } from "react-icons/md";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
@@ -245,7 +245,7 @@ function page() {
               Continue
             </button>
 
-            <AlreadyAccount signIn></AlreadyAccount>
+            <AlreadyAccount></AlreadyAccount>
           </div>
           {/* <div className="font-[600] text-white text-[0.8rem] md:text-[1.0rem] mb-[15px] sm:mb-[20px] lg:mb-[25px]">
                 Already have an account?{" "}
@@ -340,11 +340,11 @@ function page() {
             </div>
           </div>
 
-          <div className="pt-6 w-full">
+          <div className="pt-6 w-full flex flex-col gap-y-2">
             <StepBtns check={check} checkField="Password" />
 
             <div className="flex justify-center">
-              <AlreadyAccount signIn />
+              <AlreadyAccount />
             </div>
           </div>
         </form>
@@ -381,7 +381,7 @@ function page() {
           <div className="pt-6 w-full">
             <StepBtns check={check} checkField={"Verify Email"} />
             <div className="flex justify-center">
-              <AlreadyAccount signIn />
+              <AlreadyAccount />
             </div>
           </div>
         </form>
@@ -409,10 +409,10 @@ function page() {
               <MdPhone />
             </IconInput>
           </div>
-          <div className="pt-6 w-full">
+          <div className="pt-6 w-full flex-col flex gap-y-2">
             <StepBtns check={check} checkField={"Phone"} />
             <div className="flex justify-center">
-              <AlreadyAccount signIn />
+              <AlreadyAccount />
             </div>
           </div>
         </form>
@@ -450,10 +450,10 @@ function page() {
               <FaStarOfLife size={11} />
             </IconInput>
           </div>
-          <div className="pt-6 w-full">
+          <div className="pt-6 w-full flex flex-col gap-y-2">
             <StepBtns check={check} checkField={"Verify Phone"} />
             <div className="flex justify-center">
-              <AlreadyAccount signIn />
+              <AlreadyAccount />
             </div>
           </div>
         </form>

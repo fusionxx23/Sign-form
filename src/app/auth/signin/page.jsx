@@ -140,15 +140,10 @@ function page() {
                     required
                   >
                     {censorPswd && (
-                      <IoMdEye
-                        id="toggle"
-                        onClick={(e) => e.stopPropagation()}
-                        className="cursor-pointer"
-                      ></IoMdEye>
+                      <IoMdEye id="toggle" className="cursor-pointer"></IoMdEye>
                     )}
                     {!censorPswd && (
                       <IoMdEyeOff
-                        onClick={(e) => e.stopPropagation()}
                         id="toggle"
                         className="cursor-pointer"
                       ></IoMdEyeOff>

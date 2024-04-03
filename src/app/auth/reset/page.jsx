@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import IconInput from "@/components/IconInput";
-import AlreadyAccount from "@/components/alreadyAccount";
+import AlreadyAccount from "@/components/AlreadyAccount";
 import StepBtns from "@/components/StepBtns";
 
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
@@ -210,7 +210,7 @@ function page() {
               Continue
             </button>
 
-            <AlreadyAccount signIn={false}></AlreadyAccount>
+            <AlreadyAccount></AlreadyAccount>
           </div>
         </form>
       </ResetWrapper>
@@ -245,7 +245,7 @@ function page() {
             </button> */}
             <StepBtns check={check} checkField={"OTP"} />
 
-            <AlreadyAccount signIn={false}></AlreadyAccount>
+            <AlreadyAccount></AlreadyAccount>
           </div>
         </form>
       </ResetWrapper>
@@ -316,7 +316,7 @@ function page() {
             </button> */}
             <StepBtns check={check} checkField={"Password"} />
 
-            <AlreadyAccount signIn={false}></AlreadyAccount>
+            <AlreadyAccount></AlreadyAccount>
           </div>
         </form>
       </ResetWrapper>
@@ -326,7 +326,7 @@ function page() {
 
 function ResetWrapper({ children, message }) {
   return (
-    <main className="">
+    <main className="px-4">
       <div className="flex flex-col items-center justify-center h-[100svh]">
         <div className="p-8 bg-black/70 rounded-lg lg:min-w-[700px]">
           <div className="font-poppins font-[700] text-[1.75rem] md:text-[2.0rem] xl:text-[2.2rem] text-white">
