@@ -98,6 +98,7 @@ function page() {
     let formData = null;
     if (!action && stage != "Email") {
       setStep(step - 1);
+      alertClear();
     } else {
       formData = new FormData(e.target);
     }
