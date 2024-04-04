@@ -95,6 +95,7 @@ function page() {
     let formData = null;
     if (!action && stage != "User") {
       setStep(step - 1);
+      alertClear();
     } else {
       formData = new FormData(e.target);
     }
@@ -219,12 +220,12 @@ function page() {
     return (
       <ResetWrapper message="We just sent your email an OTP">
         <form
-          id="1"
+          id="2"
           className="flex flex-col items-center justify-center pt-6"
-          onSubmit={(e) => check(e, "User", true)}
+          onSubmit={(e) => check(e, "OTP", true)}
         >
           <div className="w-full flex flex-col gap-y-4">
-            <div id="emailcontainer" className="w-full ">
+            <div id="otpcontainer" className="w-full ">
               <IconInput
                 type="text"
                 name="otp"
@@ -254,9 +255,9 @@ function page() {
     return (
       <ResetWrapper>
         <form
-          id="1"
+          id="3"
           className="flex flex-col items-center justify-center pt-6"
-          onSubmit={(e) => check(e, "User", true)}
+          onSubmit={(e) => check(e, "Password", true)}
         >
           <div className="w-full flex flex-col gap-y-4">
             <div id="passwordcontainer" className="w-full ">
