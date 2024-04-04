@@ -27,7 +27,7 @@ function page() {
     alertClear();
 
     const alertDiv = document.createElement("div");
-    alertDiv.innerHTML = `<div class="text-light-1 mt-[1svh] text-[0.65rem] md:text-[1.0rem] text-red-200 pl-1" id="alert">${alert}</div>`;
+    alertDiv.innerHTML = `<div class="text-light-1 mt-[1svh] text-[0.65rem] md:text-[0.9rem] text-red-400 pl-1" id="alert">${alert}</div>`;
     formElement.appendChild(alertDiv);
   }
 
